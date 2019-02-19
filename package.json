@@ -1,8 +1,11 @@
 {
   "name": "ignored-cli",
   "version": "1.0.0",
-  "description": "ignored-cli",
+  "description": "List all files that is ignored by .gitignore",
   "main": "src/index.js",
+  "bin": {
+    "ignored": "bin/index.js"
+  },
   "scripts": {
     "test": "nyc ava --timeout=10s",
     "test-no-report": "NODE_DEBUG=ignored-cli nyc ava --timeout=10s --verbose",
@@ -17,7 +20,11 @@
     "url": "git://github.com/kaelzhang/node-ignored-cli.git"
   },
   "keywords": [
-    "ignored-cli"
+    "ignored-cli",
+    "ignored",
+    "ls",
+    "list",
+    "ls-ignored"
   ],
   "engines": {
     "node": ">= 6"
@@ -37,5 +44,11 @@
     "eslint-config-ostai": "^1.1.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint": "^5.14.0"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "globby": "^9.0.0",
+    "ignore": "^5.0.5",
+    "minimist": "^1.2.0"
   }
 }

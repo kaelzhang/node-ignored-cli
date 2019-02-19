@@ -15,18 +15,18 @@
 
 # ignored-cli
 
-<!-- description -->
+List all files that is ignored by .gitignore
 
 ## Install
 
 ```sh
-$ npm i ignored-cli
+$ npm i -g ignored-cli
 ```
 
 ## Usage
 
-```js
-import ignored_cli from 'ignored-cli'
+```sh
+ignored
 ```
 
 ## License
