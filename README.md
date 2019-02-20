@@ -29,6 +29,18 @@ $ npm i -g ignored-cli
 ignored
 ```
 
+Include `node_modules` directory and subdirectories if ignored:
+
+```sh
+ignored --list-node-modules
+```
+
+Show help
+
+```sh
+ignored -h
+```
+
 ## License
 
 MIT
